@@ -1,0 +1,124 @@
+<app-navbar></app-navbar>
+
+<div class="container my-5">
+  <form>
+    <div class="form-row">
+      <div class="col-6">
+        <div class="form-group">
+          <label for="firstname">Firstname</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            class="form-control"
+            formControlName="firstname"
+          />
+          <div>
+            <small>Firstname is required<br /></small>
+            <small>Invalid Firstname<br /></small>
+            <small>Firstname must contain two characters at least</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-group">
+          <label for="lastname">Lastname</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            class="form-control"
+            formControlName="lastname"
+          />
+          <div>
+            <small>Lastname is required<br /></small>
+            <small>Invalid Lastname<br /></small>
+            <small>Lastname must contain two characters at least</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-6">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            formControlName="email"
+            aria-describedby="emailHelp"
+          />
+          <div>
+            <small class="text-danger">Email is required<br /></small>
+            <small>Invalid Email<br /></small>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            class="form-control"
+            formControlName="phone"
+          />
+          <div>
+            <small class="text-danger">Phone is required<br /></small>
+            <small class="text-danger">Invalid Phone<br /></small>
+            <small class="text-danger"
+              >Phone must contain 8 characters at least</small
+            >
+            <small class="text-danger"
+              >Phone must contain a maximum of 13 characters</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-6">
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            formControlName="password"
+          />
+          <div>
+            <small class="text-danger">Password is required<br /></small>
+            <small class="text-danger"
+              >password must contain 6 characters at least</small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-group">
+          <label for="repeatPassword">Repeat Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="repeatPassword"
+            formControlName="repassword"
+          />
+          <div>
+            <small class="text-danger">Repeat Password is required<br /></small>
+          </div>
+          <div class="text-danger">The passwords entered do not match</div>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <button type="submit" class="btn btn-primary">Register</button>
+      </div>
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>
