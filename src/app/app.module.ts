@@ -9,7 +9,9 @@ import { RegisterComponent } from './register/register.component';
 import { PeopleListComponent } from './people-list/people-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { Page404Component } from './page404/page404.component';
 
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +21,9 @@ import { FooterComponent } from './footer/footer.component';
     PeopleListComponent,
     NavbarComponent,
     FooterComponent,
+    Page404Component,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

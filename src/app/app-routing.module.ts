@@ -1,3 +1,4 @@
+import { Page404Component } from './page404/page404.component';
 import { PeopleListComponent } from './people-list/people-list.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'people-list', component: PeopleListComponent },
+  { path: '**', component: Page404Component },
 ];
 
 @NgModule({
